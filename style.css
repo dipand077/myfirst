@@ -1,0 +1,273 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin-top:53px;
+}
+
+/**navbar**/
+
+.navbar{
+    background-color: #FF9B71;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+    border-top:2px solid black;
+}
+
+.logo a{
+    padding-left:20px;
+    text-decoration: none;
+    color:black;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap:30px;
+    padding-right: 20px;
+}
+
+.nav{
+    text-decoration:none;
+    color:black;
+}
+
+li:hover{
+    text-decoration: underline;
+    font-weight: 500;
+    background-color:#EDDAD2;
+    transform: translateY(-2px);
+    transition:all 0.3s ease;
+    padding:4px 6px;
+    border-radius: 9px;
+}
+
+@media (max-width:728px){
+    .navbar{
+        flex-direction: column;
+        height: 80px;
+        transition-duration: 1s;
+    }
+    ul{
+        gap:10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/**Hero Section**/
+
+.hero-section{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #FFFD82;
+    padding: 50px;
+}
+
+.hero-section h1{
+    font-size: 40px;
+}
+
+.hero-section p{
+    margin:10px 0;
+}
+.section{
+    padding:60px 20px;
+}
+
+.hire{
+    border:none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aqua;
+    border:1px solid black;
+}
+.hire:hover{
+    border:2px solid black;
+}
+
+.image{
+    height: 200px;
+    width:200px;
+    border-radius:50%;
+    background-image:url("dipanshu.jpg");
+    background-size:cover;
+    padding:20px;
+}
+
+.image:hover{
+    border:2px solid #2D3047;
+}
+
+@media(max-width:500px){
+    .hero-section{
+        flex-direction: column;
+    }
+}
+
+
+/** About Section **/
+
+.about-section{
+    background-color:#2D3047;
+    padding:30px;
+    border-top:2px solid black;
+    color:#D9DDF6;
+}
+.img{
+    height:300px;
+    width:300px;
+    background-size: cover;
+}
+
+u{
+    background-color: #CFD2EA;
+    color:black;
+}
+.layout{
+    display:flex;
+    justify-content: space-between;
+    gap:50px;
+    align-items: center;
+    
+}
+
+.layout p{
+    font-weight: 700;
+}
+
+@media(max-width:500px){
+    .layout{
+        flex-direction:column;
+    }
+}
+
+/** Skills Section **/
+
+h3{
+    text-align: center;
+}
+
+h3:hover{
+    text-decoration: underline;
+}
+.skills-section{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+}
+
+.section{
+    background-color: #ED217C;
+}
+
+.box:hover{
+    border:2px solid black;
+    padding:10px;
+    box-shadow:0 2px 5px;
+    transform: translate(-5px);
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width:728px){
+    .skills-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .skills-section{
+        grid-template-columns:1fr;
+    }
+}
+
+/** Projects Section **/
+
+.project-section{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    padding:10px;
+    padding-bottom: 50px;
+}
+.section-project{
+    background-color: #1B998B;
+    padding-top:35px;
+}
+
+.box{
+    text-align: center;
+}
+
+.box_img{
+    height:200px;
+    width:200px;
+    background-size: cover;
+}
+
+@media (max-width:728px){
+    .project-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .project-section{
+        grid-template-columns:1fr;
+    }
+}
+
+/**footer**/
+
+#footer{
+    background-color: #84FFF1;
+    padding: 30px;
+}
+
+.footer-layout{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:50px;
+    gap:20px;
+}
+
+@media (max-width:500px){
+    .footer-layout{
+        flex-direction: column;
+    }
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    
+}
+#sub{
+    padding:8px 15px;
+    border-radius: 4px;
+}
+
+.button1 button:hover{
+    background-color: aqua;
+}
+
+.anchor{
+    color:black;
+    background-color:#CFD2EA ;
+}
